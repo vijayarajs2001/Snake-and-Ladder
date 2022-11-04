@@ -1,0 +1,84 @@
+body {
+    background-color: gray;
+}
+
+.main {
+    display: flex;
+}
+
+.gameboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 120vh;
+}
+
+.tileGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.tileGrid>div {
+    font-size: 5px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    border: 2px black solid;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tileGrid>div>div {
+    margin-top:-2px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.board>div>span {
+    display: flex;
+
+}
+
+.playerpositionid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 10px;
+}
+
+.diceOutputid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 10px;
+}
+
+.restart {
+    margin-left: 75px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 10px;
+}
+
+#display {
+    margin-left: 85px;
+    border-radius: 25px;
+    line-height: 2px;
+}
+
+.obstacle {
+    position: absolute;
+}
+
+.invisible {
+    display: none;
+}
+
+
